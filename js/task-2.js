@@ -46,16 +46,17 @@ imgStyle.textContent = `
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0;
-    gap: 48px 24px; 
+    margin: 0 auto;
+    gap: 48px 24px;
+    max-width: 1128px;
+    justify-content: center; 
   }
   .gallery li {
-    width: calc((100% - 48px) / 3);
-    box-sizing: border-box;
+    flex: 0 1 300px; 
   }
   .gallery img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     display: block;
   }
